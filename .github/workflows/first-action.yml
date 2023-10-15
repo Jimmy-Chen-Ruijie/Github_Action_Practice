@@ -1,0 +1,10 @@
+name: First Workflow
+on: workflow_dispatch # It means that the workflow should be manually triggered by the user
+jobs:
+  first-job:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Print greeting
+        run: echo "Hello World!"
+      - name: print goodbye
+        run: echo "Done - bye!"
